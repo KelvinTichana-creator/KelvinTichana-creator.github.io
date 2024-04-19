@@ -48,10 +48,28 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 200,
-//     reset: true
+    // reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+// Define the elements to reveal with ScrollReveal
+const revealElements = [
+    '.home__data',
+    '.about__img',
+    '.skills__subtitle',
+    '.skills__text',
+    '.home__img',
+    '.about__subtitle',
+    '.about__text',
+    '.skills__img',
+    '.home__social-icon',
+    '.skills__data',
+    '.work__img',
+    '.contact__input',
+    '.education__container', // Add the class for the Education section
+    '.certifications__container' // Add the class for the Certifications section
+];
+
+// Loop through each element and apply ScrollReveal
+revealElements.forEach(element => {
+    sr.reveal(element, {});
+});
