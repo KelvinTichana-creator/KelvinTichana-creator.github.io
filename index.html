@@ -1,206 +1,209 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        body {
-            background-image: url('https://cdn.pixabay.com/photo/2020/12/28/10/57/artificial-intelligence-5866644_1280.jpg');
-		    background-color: white;
-		    background-size: cover;
-		    background-position: center;
-		    background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #373773;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        header h1 {
-            
-            font-size: 2em;
-            margin: 0;
-        }
-        header h2 {
-            font-size: 1.5em;
-            margin: 0;
-        }
-        header h3 {
-            font-size: 1.0em;
-            margin: 0;
-        }
-        nav {
-            background-color: #eee;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        a {
-	color: #333;
-	font-size: 16px;
-	text-decoration: none;
-}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-a:hover {
-	color: #0077c9;
-}
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-img {
-	height: 3px;
-	vertical-align: middle;
-	width: 3px;
-}
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        nav ul {
-            
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav li {
-            margin: 0 10px;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-        }
-        nav a:hover {
-            color: #999;
-        }
-        main {
-            background-color: rgba(189, 186, 190, 0.2);
-            color: black;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-        section {
-            background-color: rgb(133, 138, 189);
-            border: 1px solid #eee;
-            box-shadow: 0 0 0 rgba(0,0,0,0.1);
-            margin: 20px;
-            padding: 20px;
-            width: 500px;
-        }
-        section h2 {
-            font-size: 1.5em;
-            margin: 0 0 20px 0;
-        }
-        section ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        section li {
-            margin: 20px 0;
-        }
-        img {
-	border: 1px solid #ccc;
-	height: 200px;
-	width: 400px;
-}
-    </style>
-    
-<head>
-	<title>Kelvin Carrington Tichana's Engineering Portfolio</title>
-</head>
-<body>
+        <title>Portifolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Portifolio</a>
+                </div>
 
-	<header>
-		<h1>Kelvin Carrington Tichana</h1>
-        
-		
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#work-experience">Work Experience</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#additional-information">Additional Information</a></li>
-		</ul>
-	</nav>
-	<main>
-        
-		<section id="education">
-			<h2>EDUCATION</h2>
-            <h3>Ashesi University</h3>
-			<h4>BSc. Electrical and Electronics Engineering</h4>
-            <h5>Relevant Courses</h5>
-			<ul>
-				<li><p>Embedded Systems</p>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
+                        
+                    </ul>
+                </div>
 
-                    <p>Circuits & Electronics</p>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-                    <p>Digital and Analog Signal Processing in Telecommunications</p>
-                    <p>Signals and Systems</p>
-
-                    <p>Communications Systems</p>
-
-                    <p>Advanced Communication Systems</p>
-
-                    <p>VLSI</p>
-                    <p>Internet of Things</p>
-
-                    <p>Control Systems</p>
-
-                    <p>Instrumentation for Engineering</p>
-                </li>
-			</ul>
-		</section>
-		<section id="work-experience">
-			<h2>Work Experience</h2>
-			<ul>
-				<li><p>NETRO Electronics Zimbabwe: Sales Intern - Handled Sales of Microcontrollers to University students</p>
-
-                    <p>St. Annes School Zimbabwe: Administrative Assistant to the principal of the school - handles most paperwork of the school principal</p>
-                    <p>Ashesi Writing Centre: Tutor - peer tutored over 60 students' academic papers </p>
-
-                    <p>Ashesi Venture Incubator - Case study researcher - wrote papers on how startups in Ghana used Lean start-up </p>
-</li>
-				
-			</ul>
-		</section>
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-                <h3>Technical Skills</h3>
-				<li>Embedded C, Python, MATLAB & SIMULINK, Proteus, Deep Learning (TensorFlow), ARM Assembly, SolidWorks, HTML5, CSS, php, Arduino, Raspberry Pi, MicroPython, VHDL, AJAX</li>
-                <h3>Non technical Skills</h3>
-				<li>Design Thinking, Problem Identification and Solving, Entrepreneurial Mindset</li>
-			</ul>
-		</section>
-		<section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Ashesi D:LAB Machine Learning Movie Recommender System</h3>
-                    <p>The recommender system was built with TensorFlow and TensorFlow Recommenders. The model was trained using the MovieLens dataset. A web app was built for user interaction using HTML, CSS, and JavaScript</p>
-                    <img src="https://media.licdn.com/dms/image/C4D22AQH6bbqpzHnR3Q/feedshare-shrink_1280/0/1662575626995?e=1676505600&v=beta&t=XoH2JKyoQ3Ljh5ALLLf4oHpl-KDDV-SIpn1FNbAE4Ag" alt="Image of the project">
-                    <h3>Impact Design Studio</h3>
-                    <p>Impact Design Studio was founded as a development house that uniquely develops business ideas through software engineering, AI tools and education as well as design thinking. Under Impact Design Studio is AIY, a project to equip youths in developing communities with programming, AI, and robotics skills</p>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Kelvin<br>Carrington<span class="home__title-color":></span><br>Electrical Engineer</h1>
                     
-                    <img src = "https://media.licdn.com/dms/image/C4E22AQF_QvxwSpW9VA/feedshare-shrink_800/0/1649936890624?e=1676505600&v=beta&t=hYO8sWkoFlAKXNSG_y-WL_vdUYhRHTUwSaAJEKuzpI4" alt="image">
-                    <h3>M.I.S.C.H.I.E.F</h3>
-                    <p>M.I.S.C.H.I.E.F is a virtual assistant that controls MAC, Windows, and Linux Computers. She can also control Embedded Devices</p>
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6997643055180713984" height="469" width="400" frameborder="2" allowfullscreen="" title="Embedded post"></iframe>
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6864210062487891968" height="574" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </li><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6833876942572404737" height="490" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/kelvin-carrington-tichana-b5b82317a/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/KelvinTichana-creator" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+                
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I am Kelvin</h2>
+                        <p class="about__text">I have a deep passion for designing intelligent systems that automate homes and workspaces using TinyML. My interest lies in merging affordable hardware solutions with software to address everyday challenges faced by people. With an educational background encompassing IoT, Embedded Systems, Telecommunications Engineering, FPGA, DSP, VLSI, and proficiency in Python, C, and MATLAB scripting, I find research in AIoT fulfilling.</p>           
+                    </div>                                   
+                </div>
+            </section>
+            <!--===== EDUCATION =====-->
+<section class="education section" id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education__container bd-grid">
+        <!-- First Education Item -->
+        <div class="education__item">
+            <h3 class="education__title">Bachelor of Science Degree in Electrical and Electronic Engineering</h3>
+            <h4 class="education__info">Ashesi University, 2023</h4>
+            <h5 class="education__description">Coursework covering: </h5>
+                <li>Internet of Things (IoT)</li>
+                <li>Very Large Scale Integration (VLSI)</li>
+                <li>Digital Signal Processing (DSP)</li>
+                <li>Embedded Systems</li>
+                <li>Telecommunications Engineering</li>
+                <li>Control Systems</li>
+                <li>Power Engineering and Electrical Machines</li>
+            </p>
+        </div>
+        <!-- Add more education items as needed -->
+    </div>
+</section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">My skills are in integrating constrained hardware with firmware in designing IoT solutions.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python3 skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-c skills__icon'></i>
+                                <span class="skills__name">C</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-assembly skills__icon' ></i>
+                                <span class="skills__name">ARM Assembly</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-MATLAB skills__icon'></i>
+                                <span class="skills__name">MATLAB</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="Projects">
+                <h2 class="section-title">Projects</h2>
+            
+                <div class="work__container bd-grid">
+                    <!-- LinkedIn Video -->
+                    <a href="https://www.raspberrypi.com/news/m-i-s-c-h-i-e-f-smart-home-system/" target="_blank">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ByhUONOys2w" title="M.I.S.C.H.I.E.F AI home assistant" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        Watch the video and read the Rasberry Pi official blog post
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/67ErVQXLf_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                </div>
+             
+             <!-- Additional YouTube Video -->
     
-            </ul>
-        </section>
-        
-		<section id="additional-information">
-			<h2>Additional Information</h2>
-			<ul>
-				<li><a href="https://github.com/KelvinTichana-creator" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-1024.png" alt="GitHub icon">GitHub</a></li>
-			</ul>
-		</section>
-	</main>
-</body>
+             
+</section>
+           
+            
+            
+      
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Kelvin</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/kelvin-carrington-tichana-b5b82317a/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://twitter.com/TichanaK" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            
+            <p class="footer__copy">&#169; Tichana. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
